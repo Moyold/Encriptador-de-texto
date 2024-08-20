@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img class="logo" src="./imagenes/Logo.png"alt="logo alura">
+        </div>
+    </header>    
+    <main>
+        <div class="main">
+            <div class="izquierda">
+                <textarea id="ingresarTexto" class="ingresar_texto" placeholder="Ingrese el texto aqui"></textarea>
+                
+                <div class="pie_izquierdo"> 
+                    <img src="/imagenes/admira.png" alt="signo admiracion">
+                    <span class="info_izquierda" >Solo letras minúsculas y sin acentos</span>
+                    <div class="btns_izquierdo">
+                        <button id="botonEncriptar" class="btn_encript">Encriptar</button>
+                        <button id="botonDesencriptar" class="btn_desencript">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="derecha" class="derecha ajuste">
+                <img id= "mune" class="mune_" src="/imagenes/Muñeco.png" alt="muñeco">
+                <textarea id="ultimoMensaje" class="ultimo_mensaje ajuste" placeholder="Ningún mensaje fue encontrado"></textarea>              
+                <p id="infodere" class="info_derecha">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="botonCopiar" class="btn_copiar oculto">Copiar</button>
+            </div>
+        </div>    
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
